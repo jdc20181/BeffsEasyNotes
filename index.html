@@ -21,11 +21,18 @@
   <input type="button" onClick="iImage()" value="Image">
 </div>
 <!-- Hide(but keep)your normal textarea and place in the iFrame replacement for it -->
-<textarea style="display:none;" name="myTextArea" id="myTextArea" cols="100" rows="14"></textarea>
+<textarea style="display:none;" name="myTextArea" id="myTextArea" cols="100" rows="14"  onblur="x=this.value></textarea>
 <iframe name="richTextField" id="richTextField" style="border:#000000 1px solid; width:700px; height:300px;"></iframe>
 <!-- End replacing your normal textarea -->
 </p>
-<br /><br /><input name="myBtn" type="button" value="Submit Data" onClick="javascript:submit_form();"/>
+<script type="text/javascript">
+function ShowResult()
+{
+    my_window = window.open("about:blank", "mywindow1");
+    my_window.document.write(x);
+}
+</script>
+<br /><br /><input name="myBtn" type="button" value="Submit Data" onClick="ShowResult()"/>
 </form>
 </body>
 </html>
