@@ -4,7 +4,7 @@
 </head>
 <body onLoad="iFrameOn();">
 <h2>My web application that intakes data from users</h2>
-<form action="my_parse_file.php" name="myform" id="myform" method="post">
+<form  name="myform" id="myform" >
 <p>Entry Title: <input name="title" id="title" type="text" size="80" maxlength="80" /></p>
 <p>Entry Body:<br>
 <div id="wysiwyg_cp" style="padding:8px; width:700px;">
@@ -32,7 +32,7 @@ function ShowResult()
     my_window.document.write(x);
 }
 </script>
-<br /><br /><input name="myBtn" type="button" value="Submit Data" onClick="ShowResult()"/>
+<button onclick="ShowResult()">see result!</button>
 </form>
 </body>
 </html>
