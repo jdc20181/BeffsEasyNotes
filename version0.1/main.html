@@ -15,12 +15,34 @@ function ShowResult()
   left: 0;
   width: 100%;
 }
+.selector2
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 </style>
 </header>
 <body>
 <div class="selector">
  <button onclick="ShowResult()">see result!</button><button  onclick="document.execCommand('bold',false,null);">Bold</button>
 <button  onclick="document.execCommand('italic',false,null);">Italic</button> <button onclick="document.execCommand('saveas',false,null);">SaveAs</button>
+<button onclick="document.execCommand('justifyCenter',false,null);"> Align Center</button>
+<button onclick="document.execCommand('justifyLeft',false,null);">Align Left</button>
+<button onclick="document.execCommand('justifyRight',false,null);"> Align Right</button>
+</div>
+<div class="selector2">
+<button onclick="document.execCommand('removeFormat',false,null);">Remove Format</button>
+<button onclick="document.execCommand('cut',false,null);">Cut</button>
+<button onclick="document.execCommand('copy',false,null);">Copy</button>
+<button onclick="document.execCommand('paste',false,null);">Paste</button>
+<button onclick="document.execCommand('undo',false,null);">Undo</button>
+<button onclick="document.execCommand('redo',false,null);">Redo</button>
+<button onclick="document.execCommand('insertimage',false,null);">Insert Image</button>
+<button onclick="document.execCommand('createlink',false,null);">Link</button>
+<button onclick="document.execCommand('Heading1',false,null);">Heading</button>
+<button onclick="document.execCommand('increaseFontSize',false,null);">Increase Font Size </button>
 </div>
 <div contenteditable  style="height:400px;width:750px;overflow:auto;" onblur="x=this.value">   
 Try editing this content... go on... select me with your cursor then write over the top of me!
